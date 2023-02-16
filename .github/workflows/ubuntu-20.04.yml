@@ -16,8 +16,7 @@ jobs:
     - run: make
     - run: make test
     - run: tree .
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v2
       with:
-        name: libjpeg_ubuntu-20.04
+        name: libjpeg_ubuntu-20.04_${{ github.sha }}:8.zip
         path: .

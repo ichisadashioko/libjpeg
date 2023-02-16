@@ -5,20 +5,20 @@
 # TARGTYPE "Win32 (x86) Console Application" 0x0103
 
 CFG=djpeg - Win32
-!MESSAGE Dies ist kein gültiges Makefile. Zum Erstellen dieses Projekts mit NMAKE
-!MESSAGE verwenden Sie den Befehl "Makefile exportieren" und führen Sie den Befehl
-!MESSAGE 
+!MESSAGE Dies ist kein gÃ¼ltiges Makefile. Zum Erstellen dieses Projekts mit NMAKE
+!MESSAGE verwenden Sie den Befehl "Makefile exportieren" und fÃ¼hren Sie den Befehl
+!MESSAGE
 !MESSAGE NMAKE /f "djpeg.mak".
-!MESSAGE 
-!MESSAGE Sie können beim Ausführen von NMAKE eine Konfiguration angeben
+!MESSAGE
+!MESSAGE Sie kÃ¶nnen beim AusfÃ¼hren von NMAKE eine Konfiguration angeben
 !MESSAGE durch Definieren des Makros CFG in der Befehlszeile. Zum Beispiel:
-!MESSAGE 
+!MESSAGE
 !MESSAGE NMAKE /f "djpeg.mak" CFG="djpeg - Win32"
-!MESSAGE 
-!MESSAGE Für die Konfiguration stehen zur Auswahl:
-!MESSAGE 
+!MESSAGE
+!MESSAGE FÃ¼r die Konfiguration stehen zur Auswahl:
+!MESSAGE
 !MESSAGE "djpeg - Win32" (basierend auf  "Win32 (x86) Console Application")
-!MESSAGE 
+!MESSAGE
 
 # Begin Project
 # PROP AllowPerConfigDependencies 0
