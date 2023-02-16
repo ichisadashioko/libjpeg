@@ -1,4 +1,4 @@
-# Microsoft Developer Studio erstellte Abhängigkeitsdatei, einbezogen von djpeg.mak
+# Microsoft Developer Studio erstellte Abhèˆ…gigkeitsdatei, einbezogen von djpeg.mak
 
 .\cdjpeg.c : \
 	".\cderror.h"\
@@ -8,7 +8,7 @@
 	".\jinclude.h"\
 	".\jmorecfg.h"\
 	".\jpeglib.h"\
-	
+
 
 .\djpeg.c : \
 	".\cderror.h"\
@@ -19,7 +19,7 @@
 	".\jmorecfg.h"\
 	".\jpeglib.h"\
 	".\jversion.h"\
-	
+
 
 .\rdcolmap.c : \
 	".\cderror.h"\
@@ -29,7 +29,7 @@
 	".\jinclude.h"\
 	".\jmorecfg.h"\
 	".\jpeglib.h"\
-	
+
 
 .\wrbmp.c : \
 	".\cderror.h"\
@@ -39,7 +39,7 @@
 	".\jinclude.h"\
 	".\jmorecfg.h"\
 	".\jpeglib.h"\
-	
+
 
 .\wrgif.c : \
 	".\cderror.h"\
@@ -49,7 +49,7 @@
 	".\jinclude.h"\
 	".\jmorecfg.h"\
 	".\jpeglib.h"\
-	
+
 
 .\wrppm.c : \
 	".\cderror.h"\
@@ -59,7 +59,7 @@
 	".\jinclude.h"\
 	".\jmorecfg.h"\
 	".\jpeglib.h"\
-	
+
 
 .\wrrle.c : \
 	".\cderror.h"\
@@ -69,7 +69,7 @@
 	".\jinclude.h"\
 	".\jmorecfg.h"\
 	".\jpeglib.h"\
-	
+
 
 .\wrtarga.c : \
 	".\cderror.h"\
@@ -79,4 +79,4 @@
 	".\jinclude.h"\
 	".\jmorecfg.h"\
 	".\jpeglib.h"\
-	
+

@@ -11,7 +11,7 @@
 ;      * * * Output file * * *
 jpegtran.ttp
 ;
-; * * * COMPILER OPTIONS * * *  
+; * * * COMPILER OPTIONS * * *
 .C[-P]        ; absolute calls
 .C[-M]        ; and no string merging, folks
 .C[-w-cln]    ; no "constant is long" warnings
@@ -19,7 +19,7 @@ jpegtran.ttp
 .C[-w-rch]    ; no "unreachable code"
 .C[-wsig]     ; warn if significant digits may be lost
 =
-; * * * * List of modules * * * * 
+; * * * * List of modules * * * *
 pcstart.o
 jpegtran.c	(cdjpeg.h,jinclude.h,jconfig.h,jpeglib.h,jmorecfg.h,jerror.h,cderror.h,transupp.h,jversion.h)
 cdjpeg.c	(cdjpeg.h,jinclude.h,jconfig.h,jpeglib.h,jmorecfg.h,jerror.h,cderror.h)

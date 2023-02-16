@@ -2,27 +2,27 @@
 !IF "$(CFG)" == ""
 CFG=jpeg - Win32
 !MESSAGE Keine Konfiguration angegeben. jpeg - Win32 wird als Standard verwendet.
-!ENDIF 
+!ENDIF
 
 !IF "$(CFG)" != "jpeg - Win32"
-!MESSAGE UngÅltige Konfiguration "$(CFG)" angegeben.
-!MESSAGE Sie kînnen beim AusfÅhren von NMAKE eine Konfiguration angeben
+!MESSAGE Ung„Äïtige Konfiguration "$(CFG)" angegeben.
+!MESSAGE Sie kÈ¶¨nen beim Ausf‚Äùren von NMAKE eine Konfiguration angeben
 !MESSAGE durch Definieren des Makros CFG in der Befehlszeile. Zum Beispiel:
-!MESSAGE 
+!MESSAGE
 !MESSAGE NMAKE /f "jpeg.mak" CFG="jpeg - Win32"
-!MESSAGE 
-!MESSAGE FÅr die Konfiguration stehen zur Auswahl:
-!MESSAGE 
+!MESSAGE
+!MESSAGE F„Äâ die Konfiguration stehen zur Auswahl:
+!MESSAGE
 !MESSAGE "jpeg - Win32" (basierend auf  "Win32 (x86) Static Library")
-!MESSAGE 
-!ERROR Eine ungÅltige Konfiguration wurde angegeben.
-!ENDIF 
+!MESSAGE
+!ERROR Eine ung„Äïtige Konfiguration wurde angegeben.
+!ENDIF
 
 !IF "$(OS)" == "Windows_NT"
 NULL=
-!ELSE 
+!ELSE
 NULL=nul
-!ENDIF 
+!ENDIF
 
 OUTDIR=.\Release
 INTDIR=.\Release
@@ -87,45 +87,45 @@ CLEAN :
     if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
 
 CPP=cl.exe
-CPP_PROJ=/nologo /G6 /MT /W3 /GX /Ox /Oa /Ob2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"$(INTDIR)\jpeg.pch" /YX /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /c 
+CPP_PROJ=/nologo /G6 /MT /W3 /GX /Ox /Oa /Ob2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp"$(INTDIR)\jpeg.pch" /YX /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /c
 
 .c{$(INTDIR)}.obj::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cpp{$(INTDIR)}.obj::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cxx{$(INTDIR)}.obj::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .c{$(INTDIR)}.sbr::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cpp{$(INTDIR)}.sbr::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cxx{$(INTDIR)}.sbr::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 RSC=rc.exe
 BSC32=bscmake.exe
-BSC32_FLAGS=/nologo /o"$(OUTDIR)\jpeg.bsc" 
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\jpeg.bsc"
 BSC32_SBRS= \
-	
+
 LIB32=link.exe -lib
-LIB32_FLAGS=/nologo /out:"$(OUTDIR)\jpeg.lib" 
+LIB32_FLAGS=/nologo /out:"$(OUTDIR)\jpeg.lib"
 LIB32_OBJS= \
 	"$(INTDIR)\jaricom.obj" \
 	"$(INTDIR)\jcapimin.obj" \
@@ -183,10 +183,10 @@ LIB32_OBJS= \
 !IF "$(NO_EXTERNAL_DEPS)" != "1"
 !IF EXISTS("jpeg.dep")
 !INCLUDE "jpeg.dep"
-!ELSE 
+!ELSE
 !MESSAGE Warning: cannot find "jpeg.dep"
-!ENDIF 
-!ENDIF 
+!ENDIF
+!ENDIF
 
 
 !IF "$(CFG)" == "jpeg - Win32"
@@ -421,5 +421,4 @@ SOURCE=.\jutils.c
 
 
 
-!ENDIF 
-
+!ENDIF

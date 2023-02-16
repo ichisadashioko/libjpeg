@@ -2,27 +2,27 @@
 !IF "$(CFG)" == ""
 CFG=jpegtran - Win32
 !MESSAGE Keine Konfiguration angegeben. jpegtran - Win32 wird als Standard verwendet.
-!ENDIF 
+!ENDIF
 
 !IF "$(CFG)" != "jpegtran - Win32"
-!MESSAGE UngÅltige Konfiguration "$(CFG)" angegeben.
-!MESSAGE Sie kînnen beim AusfÅhren von NMAKE eine Konfiguration angeben
+!MESSAGE Ung„Äïtige Konfiguration "$(CFG)" angegeben.
+!MESSAGE Sie kÈ¶¨nen beim Ausf‚Äùren von NMAKE eine Konfiguration angeben
 !MESSAGE durch Definieren des Makros CFG in der Befehlszeile. Zum Beispiel:
-!MESSAGE 
+!MESSAGE
 !MESSAGE NMAKE /f "jpegtran.mak" CFG="jpegtran - Win32"
-!MESSAGE 
-!MESSAGE FÅr die Konfiguration stehen zur Auswahl:
-!MESSAGE 
+!MESSAGE
+!MESSAGE F„Äâ die Konfiguration stehen zur Auswahl:
+!MESSAGE
 !MESSAGE "jpegtran - Win32" (basierend auf  "Win32 (x86) Console Application")
-!MESSAGE 
-!ERROR Eine ungÅltige Konfiguration wurde angegeben.
-!ENDIF 
+!MESSAGE
+!ERROR Eine ung„Äïtige Konfiguration wurde angegeben.
+!ENDIF
 
 !IF "$(OS)" == "Windows_NT"
 NULL=
-!ELSE 
+!ELSE
 NULL=nul
-!ENDIF 
+!ENDIF
 
 CPP=cl.exe
 RSC=rc.exe
@@ -47,11 +47,11 @@ CLEAN :
     if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
 
 BSC32=bscmake.exe
-BSC32_FLAGS=/nologo /o"$(OUTDIR)\jpegtran.bsc" 
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\jpegtran.bsc"
 BSC32_SBRS= \
-	
+
 LINK32=link.exe
-LINK32_FLAGS=Release\jpeg.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"$(OUTDIR)\jpegtran.pdb" /machine:I386 /out:"$(OUTDIR)\jpegtran.exe" 
+LINK32_FLAGS=Release\jpeg.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"$(OUTDIR)\jpegtran.pdb" /machine:I386 /out:"$(OUTDIR)\jpegtran.exe"
 LINK32_OBJS= \
 	"$(INTDIR)\cdjpeg.obj" \
 	"$(INTDIR)\jpegtran.obj" \
@@ -63,46 +63,46 @@ LINK32_OBJS= \
   $(LINK32_FLAGS) $(LINK32_OBJS)
 <<
 
-CPP_PROJ=/nologo /G6 /MT /W3 /GX /Ox /Oa /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /Fp"$(INTDIR)\jpegtran.pch" /YX /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /c 
+CPP_PROJ=/nologo /G6 /MT /W3 /GX /Ox /Oa /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /Fp"$(INTDIR)\jpegtran.pch" /YX /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /FD /c
 
 .c{$(INTDIR)}.obj::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cpp{$(INTDIR)}.obj::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cxx{$(INTDIR)}.obj::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .c{$(INTDIR)}.sbr::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cpp{$(INTDIR)}.sbr::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 .cxx{$(INTDIR)}.sbr::
    $(CPP) @<<
-   $(CPP_PROJ) $< 
+   $(CPP_PROJ) $<
 <<
 
 
 !IF "$(NO_EXTERNAL_DEPS)" != "1"
 !IF EXISTS("jpegtran.dep")
 !INCLUDE "jpegtran.dep"
-!ELSE 
+!ELSE
 !MESSAGE Warning: cannot find "jpegtran.dep"
-!ENDIF 
-!ENDIF 
+!ENDIF
+!ENDIF
 
 
 !IF "$(CFG)" == "jpegtran - Win32"
@@ -127,5 +127,4 @@ SOURCE=.\transupp.c
 
 
 
-!ENDIF 
-
+!ENDIF

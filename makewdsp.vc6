@@ -5,20 +5,20 @@
 # TARGTYPE "Win32 (x86) Console Application" 0x0103
 
 CFG=wrjpgcom - Win32
-!MESSAGE Dies ist kein gültiges Makefile. Zum Erstellen dieses Projekts mit NMAKE
-!MESSAGE verwenden Sie den Befehl "Makefile exportieren" und führen Sie den Befehl
-!MESSAGE 
+!MESSAGE Dies ist kein gÅ˜ltiges Makefile. Zum Erstellen dieses Projekts mit NMAKE
+!MESSAGE verwenden Sie den Befehl "Makefile exportieren" und fÅ˜hren Sie den Befehl
+!MESSAGE
 !MESSAGE NMAKE /f "wrjpgcom.mak".
-!MESSAGE 
-!MESSAGE Sie können beim Ausführen von NMAKE eine Konfiguration angeben
+!MESSAGE
+!MESSAGE Sie kÃ·nnen beim AusfÅ˜hren von NMAKE eine Konfiguration angeben
 !MESSAGE durch Definieren des Makros CFG in der Befehlszeile. Zum Beispiel:
-!MESSAGE 
+!MESSAGE
 !MESSAGE NMAKE /f "wrjpgcom.mak" CFG="wrjpgcom - Win32"
-!MESSAGE 
-!MESSAGE Für die Konfiguration stehen zur Auswahl:
-!MESSAGE 
+!MESSAGE
+!MESSAGE FÅ˜r die Konfiguration stehen zur Auswahl:
+!MESSAGE
 !MESSAGE "wrjpgcom - Win32" (basierend auf  "Win32 (x86) Console Application")
-!MESSAGE 
+!MESSAGE
 
 # Begin Project
 # PROP AllowPerConfigDependencies 0

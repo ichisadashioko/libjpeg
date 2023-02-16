@@ -309,7 +309,7 @@ LZWReadByte (gif_source_ptr sinfo)
 
   /* Got normal raw byte or LZW symbol */
   incode = code;		/* save for a moment */
-  
+
   if (code >= sinfo->max_code) { /* special case for not-yet-defined symbol */
     /* code == max_code is OK; anything bigger is bad data */
     if (code > sinfo->max_code) {
@@ -342,7 +342,7 @@ LZWReadByte (gif_source_ptr sinfo)
       sinfo->limit_code <<= 1;	/* keep equal to 2^code_size */
     }
   }
-  
+
   sinfo->oldcode = incode;	/* save last input symbol for future use */
   return sinfo->firstcode;	/* return first byte of symbol's expansion */
 }
@@ -442,7 +442,7 @@ start_input_gif (j_compress_ptr cinfo, cjpeg_source_ptr sinfo)
       DoExtension(source);
       continue;
     }
-    
+
     if (c != ',') {		/* Not an image separator? */
       WARNMS1(cinfo, JWRN_GIF_CHAR, c);
       continue;
@@ -544,7 +544,7 @@ get_pixel_rows (j_compress_ptr cinfo, cjpeg_source_ptr sinfo)
   register JSAMPROW ptr;
   register JDIMENSION col;
   register JSAMPARRAY colormap = source->colormap;
-  
+
   ptr = source->pub.buffer[0];
   for (col = cinfo->image_width; col > 0; col--) {
     c = LZWReadByte(source);

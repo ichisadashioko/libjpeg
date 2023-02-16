@@ -25,7 +25,7 @@ text_getc (FILE * file)
 /* A comment/newline sequence is returned as a newline */
 {
   register int ch;
-  
+
   ch = getc(file);
   if (ch == '#') {
     do {
@@ -43,7 +43,7 @@ read_text_integer (FILE * file, long * result, int * termchar)
 {
   register int ch;
   register long val;
-  
+
   /* Skip any leading whitespace, detect EOF */
   do {
     ch = text_getc(file);
@@ -52,7 +52,7 @@ read_text_integer (FILE * file, long * result, int * termchar)
       return FALSE;
     }
   } while (isspace(ch));
-  
+
   if (! isdigit(ch)) {
     *termchar = ch;
     return FALSE;

@@ -162,7 +162,7 @@ libjpeg_la_OBJECTS = $(am_libjpeg_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
-am__v_lt_1 = 
+am__v_lt_1 =
 libjpeg_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 	$(libjpeg_la_LDFLAGS) $(LDFLAGS) -o $@
@@ -193,11 +193,11 @@ am__v_P_1 = :
 AM_V_GEN = $(am__v_GEN_@AM_V@)
 am__v_GEN_ = $(am__v_GEN_@AM_DEFAULT_V@)
 am__v_GEN_0 = @echo "  GEN     " $@;
-am__v_GEN_1 = 
+am__v_GEN_1 =
 AM_V_at = $(am__v_at_@AM_V@)
 am__v_at_ = $(am__v_at_@AM_DEFAULT_V@)
 am__v_at_0 = @
-am__v_at_1 = 
+am__v_at_1 =
 DEFAULT_INCLUDES = -I.@am__isrc@
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__maybe_remake_depfiles = depfiles
@@ -244,7 +244,7 @@ LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 AM_V_CC = $(am__v_CC_@AM_V@)
 am__v_CC_ = $(am__v_CC_@AM_DEFAULT_V@)
 am__v_CC_0 = @echo "  CC      " $@;
-am__v_CC_1 = 
+am__v_CC_1 =
 CCLD = $(CC)
 LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
@@ -252,7 +252,7 @@ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
-am__v_CCLD_1 = 
+am__v_CCLD_1 =
 SOURCES = $(libjpeg_la_SOURCES) $(cjpeg_SOURCES) $(djpeg_SOURCES) \
 	$(jpegtran_SOURCES) $(rdjpgcom_SOURCES) $(wrjpgcom_SOURCES)
 am__can_run_installinfo = \
@@ -573,7 +573,7 @@ jconfig.h: stamp-h1
 stamp-h1: $(srcdir)/jconfig.cfg $(top_builddir)/config.status
 	@rm -f stamp-h1
 	cd $(top_builddir) && $(SHELL) ./config.status jconfig.h
-$(srcdir)/jconfig.cfg: @MAINTAINER_MODE_TRUE@ $(am__configure_deps) 
+$(srcdir)/jconfig.cfg: @MAINTAINER_MODE_TRUE@ $(am__configure_deps)
 	($(am__cd) $(top_srcdir) && $(AUTOHEADER))
 	rm -f stamp-h1
 	touch $@
@@ -667,26 +667,26 @@ clean-libLTLIBRARIES:
 	  rm -f $${locs}; \
 	}
 
-libjpeg.la: $(libjpeg_la_OBJECTS) $(libjpeg_la_DEPENDENCIES) $(EXTRA_libjpeg_la_DEPENDENCIES) 
+libjpeg.la: $(libjpeg_la_OBJECTS) $(libjpeg_la_DEPENDENCIES) $(EXTRA_libjpeg_la_DEPENDENCIES)
 	$(AM_V_CCLD)$(libjpeg_la_LINK) -rpath $(libdir) $(libjpeg_la_OBJECTS) $(libjpeg_la_LIBADD) $(LIBS)
 
-cjpeg$(EXEEXT): $(cjpeg_OBJECTS) $(cjpeg_DEPENDENCIES) $(EXTRA_cjpeg_DEPENDENCIES) 
+cjpeg$(EXEEXT): $(cjpeg_OBJECTS) $(cjpeg_DEPENDENCIES) $(EXTRA_cjpeg_DEPENDENCIES)
 	@rm -f cjpeg$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(cjpeg_OBJECTS) $(cjpeg_LDADD) $(LIBS)
 
-djpeg$(EXEEXT): $(djpeg_OBJECTS) $(djpeg_DEPENDENCIES) $(EXTRA_djpeg_DEPENDENCIES) 
+djpeg$(EXEEXT): $(djpeg_OBJECTS) $(djpeg_DEPENDENCIES) $(EXTRA_djpeg_DEPENDENCIES)
 	@rm -f djpeg$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(djpeg_OBJECTS) $(djpeg_LDADD) $(LIBS)
 
-jpegtran$(EXEEXT): $(jpegtran_OBJECTS) $(jpegtran_DEPENDENCIES) $(EXTRA_jpegtran_DEPENDENCIES) 
+jpegtran$(EXEEXT): $(jpegtran_OBJECTS) $(jpegtran_DEPENDENCIES) $(EXTRA_jpegtran_DEPENDENCIES)
 	@rm -f jpegtran$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(jpegtran_OBJECTS) $(jpegtran_LDADD) $(LIBS)
 
-rdjpgcom$(EXEEXT): $(rdjpgcom_OBJECTS) $(rdjpgcom_DEPENDENCIES) $(EXTRA_rdjpgcom_DEPENDENCIES) 
+rdjpgcom$(EXEEXT): $(rdjpgcom_OBJECTS) $(rdjpgcom_DEPENDENCIES) $(EXTRA_rdjpgcom_DEPENDENCIES)
 	@rm -f rdjpgcom$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(rdjpgcom_OBJECTS) $(rdjpgcom_LDADD) $(LIBS)
 
-wrjpgcom$(EXEEXT): $(wrjpgcom_OBJECTS) $(wrjpgcom_DEPENDENCIES) $(EXTRA_wrjpgcom_DEPENDENCIES) 
+wrjpgcom$(EXEEXT): $(wrjpgcom_OBJECTS) $(wrjpgcom_DEPENDENCIES) $(EXTRA_wrjpgcom_DEPENDENCIES)
 	@rm -f wrjpgcom$(EXEEXT)
 	$(AM_V_CCLD)$(LINK) $(wrjpgcom_OBJECTS) $(wrjpgcom_LDADD) $(LIBS)
 
