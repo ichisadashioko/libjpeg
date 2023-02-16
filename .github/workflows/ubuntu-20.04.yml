@@ -18,5 +18,5 @@ jobs:
     - run: tree .
     - uses: actions/upload-artifact@v2
       with:
-        name: libjpeg_ubuntu-20.04_${{ github.sha }}:8.zip
+        name: libjpeg_ubuntu-20.04_${{ substring(github.sha, 0, 8) }}.zip
         path: .
