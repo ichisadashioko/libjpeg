@@ -18,8 +18,8 @@ jobs:
         name: libjpeg_ubuntu-20.04_${{ github.sha }}
         path: |
           ./*.h
-          ./.lib/*.so
-          ./.lib/*.so.*
-          ./.lib/cjpeg
-          ./.lib/djpeg
-          ./.lib/jpegtran
+          ./.libs/*.so
+          ./.libs/*.so.*
+          ./.libs/cjpeg
+          ./.libs/djpeg
+          ./.libs/jpegtran
