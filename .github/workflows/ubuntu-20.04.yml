@@ -1,9 +1,6 @@
 name: libjpeg_ubuntu-20.04
 
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch
 
 jobs:
   build:
@@ -19,4 +16,10 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: libjpeg_ubuntu-20.04_${{ github.sha }}
-        path: .
+        path: |
+          ./*.h
+          ./.lib/*.so
+          ./.lib/*.so.*
+          ./.lib/cjpeg
+          ./.lib/djpeg
+          ./.lib/jpegtran
